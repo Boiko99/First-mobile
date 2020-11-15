@@ -1,0 +1,112 @@
+#travel{
+    background-image: url(/img/travelbg.jpg);
+   background-repeat: no-repeat;
+    max-width: 100%;
+    // height: 700px;
+    margin-top: 50px;
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+
+
+.travel{
+//    max-width: 600px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+//    margin: 0 auto;
+        margin: 30px auto;
+        max-width: 190px;
+        height: 250px;
+        overflow: hidden;
+    
+    &-list{
+        // overflow: hidden;
+    //    display: block;
+       position: relative;
+       
+        
+        width:190px;
+        height:250px;
+       
+        
+       
+        &__carpath{
+            
+             background-image: url(/img/travel1.jpg);
+            background-repeat: no-repeat;
+            
+        }
+        &__alps{
+             background-image: url(/img/travel2.jpg);
+            background-repeat: no-repeat;
+            
+        }
+        &__perenees{
+             background-image: url(/img/travel3.jpg);
+            background-repeat: no-repeat;
+            
+        }
+        &__rocky{
+             background-image: url(/img/travel4.jpg);
+            background-repeat: no-repeat;
+            
+        }
+        &__kavkaz{
+             background-image: url(/img/travel5.jpg);
+            background-repeat: no-repeat;
+           
+        }
+        &__span{
+            margin: 10px 20px;
+            color: #fff;
+            font-weight: bold;
+             
+        }
+        &__title{
+            margin-top: 30px;
+            font-family: var(--font-family-opensans);
+            font-size: 28px;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+        }
+        &__text{
+            font-family: var(--font-family-opensans);
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            
+        }
+        &-cost{
+            padding: 0 10px;
+            position: absolute;
+            width: 100%;
+            background:rgba(255,255,255,0.7);
+            bottom: 0;
+            height: 40px;
+            font-family: var(--font-family-opensans);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            &__many{
+                color: #fff;
+                
+                
+                font-size: 16px;
+                
+            }
+            &__d{
+                
+                font-size: 20px;
+                font-weight: bold;
+               
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+a{
+    text-decoration: none;  
+    position: relative;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    @media screen and (min-width: $breakpoint-md ){}
+    width: 100%;
+}
+ul> li{
+    list-style-type: none;
+    
+}
+p{
+    color: var(--white);
+    font-weight: 300px;
+    font-size: 12px;
+    font-family: var(--font-family-opensans);
+    font-style: normal;
+    
+}
+h2{
+    text-align: center;
+    font-family: var(--font-family-opensans);
+    font-style: bold;
+}
+h3{
+    font-family: var(--font-family-opensans);
+    font-weight: bold;
+}
+.line{
+    text-align: center;
+    opacity: 0.5;
+    width: 100%;
+   
+}
+.hidens{
+    display: none;
+}
+.visually-hidden {
+    display: none;
+}

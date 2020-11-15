@@ -1,0 +1,53 @@
+#about{
+   
+    background-size: contain;
+    
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    
+    background-image: url(../img/bg2.png);
+    
+   
+}
+#line{
+    margin-bottom: 0;
+    padding: 0;
+    opacity: 0.5;
+}
+.about{
+    height: 230px;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background: rgba(212, 210, 210, 0.2);
+    &-block{
+        padding: 20px 0 0 40px;
+    }
+    &-title{
+       
+        max-width: 200px;
+    }
+    &-text{
+        
+        width: 200px;
+        font-size: 12px;
+        color: #2c2e37;
+        
+    }
+    &-img{
+        
+        
+        width: 200px;
+        height: 200px;
+        background-image: url(../img/photo2.png);
+        
+         margin: 20px   40px 0 0 ;
+        
+    }
+    &-button{
+        max-width: 300px;  
+    }
+}

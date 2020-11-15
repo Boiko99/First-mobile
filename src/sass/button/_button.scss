@@ -1,0 +1,25 @@
+.btn{
+    text-align: center;
+    margin-top: 5px;
+    &--link{
+    color: var(--white);
+    font-size: 12px;
+    text-align: center;
+    font-family: var(--font-family-releway);
+    background: var(--blue);
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    
+    }
+    &--link__white{
+        border: var(--blue) 2px solid;
+        font-size: 14px;
+        padding: 8px 10px;
+        background: none;
+        color: var(--blue);
+        // display: inline;
+    }
+}

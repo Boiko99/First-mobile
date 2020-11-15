@@ -1,0 +1,21 @@
+.region{
+    background-image: url(../img/bg1.png);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 20px;
+    @media screen and (min-width: $breakpoint-md ){
+        background-size: 100% ;
+      position: absolute;
+        // height: 100%;
+        height: 900px;
+        // background-position-y: 20px;
+        
+    }
+}
+.wraper{
+    @media screen and (min-width: $breakpoint-md ){
+        height: 800px;
+    }
+}

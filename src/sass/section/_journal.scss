@@ -1,0 +1,106 @@
+
+
+.journal-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // max-width: 430px;
+    align-items: center;
+    // max-width: 250px;
+    
+    &-list{
+        margin-top: 3px;
+        border-bottom: var(--blue) 1px solid;
+        // border: #000 2px solid;
+        align-items: center;
+        // display: flex;
+        width: 230px;
+        flex-direction: column;
+        // border: #000 2px solid;
+       
+        &__title{
+            text-align: left;
+            margin: 0 auto;
+            color:var(--black-blue);
+            text-align: center;
+            max-width: 150px;
+            font-style: bold;
+            font-weight: bold;
+            font-size: 14px;
+            
+        }
+        &__text{
+            font-style: bold;
+            font-size: 12px;
+            width: 170px;
+            text-align: center;
+            margin: 0 auto;
+            color: var(--black);
+            font-style: bold;
+        }
+        &-description{
+            color: #777777;
+            text-align: center;
+            font-size: 12px;
+            margin: 0 auto;
+            width: 170px;
+        }
+        &__page{
+            color: var(--black);
+            text-align: center;
+            font-size: 10px;
+            font-style: italic;
+        }
+    }
+    &-img{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        // background-image: url(../img/love.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        position: relative;
+        
+        height: 210px;
+        width: 200px;
+        &__tree{
+            background-image: url(../img/tree.jpg);
+        }
+        &__love{
+            background-image: url(../img/love.jpg);
+        }
+        &__watter{
+            background-image: url(../img/water.jpg);
+        }
+        
+        &:after{
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: #fff 15px solid ;
+            top: 20px;
+            right: 0px;
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+           
+           }
+        
+    }
+    &-span{
+        // position: absolute;
+        // display: inline;
+        height: 70px;
+        width: 70px;
+        
+    }
+    
+}
+.card{
+    border: #000 3px solid;
+    display: block;
+   
+    text-align: center;
+}

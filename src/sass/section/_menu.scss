@@ -1,0 +1,121 @@
+.menu {
+    display: none;
+    background: #36aeea;
+    position: fixed;
+    z-index: 10;
+    top: -10px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: var(--font-family-opensans);
+
+    @media screen and (min-width: $breakpoint-md ){
+        display: flex;
+        position: static;
+        background: none;
+    }
+
+    &__wrapper {
+        max-height: calc(100vh - 100px);
+        overflow: auto;
+        text-align: center;
+    }
+
+    &--is-opened{
+        display: inherit;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        font-size: 2.5em;
+        z-index: 11;
+        // position: absolute;
+       
+        @media screen and (min-width: $breakpoint-md ){
+            flex-direction: row;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+    }
+    
+
+    &__list-li {
+        margin: 15px 0;
+        z-index: 11;
+        
+        @media screen and (min-width: $breakpoint-md ){
+            margin: 0 10px
+        }
+      
+    }
+
+    &__link {
+        color: #fff;
+        
+            @media screen and (min-width: $breakpoint-md ){
+                color: #fff;
+            &::before{
+                content: "";
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                width: 0%;
+                border-bottom: #36aeea 2px solid;   
+                transition: 0.2s;
+                
+            }
+            &:hover:before{
+                width: 100%;
+                
+                
+            }
+            }
+            
+        
+       
+    }
+
+    &__close {
+        position: absolute;
+        bottom: 0px;
+        height: 100px;
+        width: 100%;
+        background: none;
+        border: 0;
+        font-size: 5em;
+        color: white;
+
+        @media screen and (min-width: $breakpoint-md ){
+            display: none;
+        }
+    }
+   
+    
+    &--img{
+        @media screen and (min-width: $breakpoint-md ){
+            display: none;
+        }
+         margin:0 10px 0 20px;
+       
+        
+    }
+
+     
+}
+#left-list{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+@media screen and (max-width: $breakpoint-md ){
+    .menu__link:hover{
+        color: aqua;
+    }
+}

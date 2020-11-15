@@ -1,0 +1,30 @@
+@import "../elements/bgElements";
+.header{
+    background: rgba(black, .23);
+
+    &__wrapper {
+        
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1170px;
+        margin: auto;
+        // min-height: 90px;
+        align-items: center;
+    }
+}
+@media screen and (min-width: $breakpoint-sm ){
+    .header{
+
+        &__wraper{
+            justify-content: space-between;
+        }
+    }
+}
+#heads{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
